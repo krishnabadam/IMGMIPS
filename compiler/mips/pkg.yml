@@ -17,14 +17,12 @@
 # under the License.
 #
 
-#pkg.name: compiler/sim
 pkg.name: compiler/mips
 pkg.type: compiler
-pkg.description: Compiler definition for native gcc compiler.
+pkg.description: Compiler definition for mips gcc compiler.
 pkg.author: "Apache Mynewt <dev@mynewt.incubator.apache.org>"
 pkg.homepage: "http://mynewt.apache.org/"
 pkg.keywords:
-#    - sim
     - mips
     - compiler
     - gcc
