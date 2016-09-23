@@ -20,6 +20,8 @@
 #include "os/os.h"
 #include "os_priv.h"
 
+#include <hal/hal_bsp.h>
+
 #ifdef __APPLE__
 #define _XOPEN_SOURCE
 #endif
@@ -44,7 +46,6 @@ struct stack_frame {
  * os_arch_frame_init() expects them to be.
  */
 CTASSERT(offsetof(struct stack_frame, sf_mainsp) == 0);
-/* CTASSERT(offsetof(struct stack_frame, sf_jb) == 4); */
 CTASSERT(offsetof(struct stack_frame, sf_jb) == 8);
 
 extern void os_arch_frame_init(struct stack_frame *sf);
@@ -403,7 +404,7 @@ os_arch_os_init(void)
     mypid = getpid();
     g_current_task = NULL;
 
-    TAILQ_INIT(&g_os_task_list);
+    STAILQ_INIT(&g_os_task_list);
     TAILQ_INIT(&g_os_run_list);
     TAILQ_INIT(&g_os_sleep_list);
 
@@ -418,7 +419,7 @@ os_arch_os_init(void)
     os_init_idle_task();
     os_sanity_task_init(1);
 
-    os_bsp_init();
+    bsp_init();
 
     return OS_OK;
 }
