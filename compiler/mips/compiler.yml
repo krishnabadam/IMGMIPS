@@ -18,12 +18,12 @@
 #
 
 # Default.
-compiler.path.cc: "/home/krishnab/bt_git_base2/buildroot/output/host/usr/bin/mips-mti-linux-gnu-gcc"
-compiler.path.as: "/home/krishnab/bt_git_base2/buildroot/output/host/usr/bin/mips-mti-linux-gnu-gcc -x assembler-with-cpp"
-compiler.path.archive: "/home/krishnab/bt_git_base2/buildroot/output/host/usr/bin/mips-mti-linux-gnu-ar"
-compiler.path.objdump: "/home/krishnab/bt_git_base2/buildroot/output/host/usr/bin/mips-mti-linux-gnu-objdump"
-compiler.path.objsize: "/home/krishnab/bt_git_base2/buildroot/output/host/usr/bin/mips-mti-linux-gnu-size"
-compiler.path.objcopy: "/home/krishnab/bt_git_base2/buildroot/output/host/usr/bin/mips-mti-linux-gnu-objcopy"
+compiler.path.cc: "$(GIT_WDIR)/buildroot/output/host/usr/bin/mips-mti-linux-gnu-gcc"
+compiler.path.as: "$(GIT_WDIR)/buildroot/output/host/usr/bin/mips-mti-linux-gnu-gcc -x assembler-with-cpp"
+compiler.path.archive: "$(GIT_WDIR)/buildroot/output/host/usr/bin/mips-mti-linux-gnu-ar"
+compiler.path.objdump: "$(GIT_WDIR)/buildroot/output/host/usr/bin/mips-mti-linux-gnu-objdump"
+compiler.path.objsize: "$(GIT_WDIR)/buildroot/output/host/usr/bin/mips-mti-linux-gnu-size"
+compiler.path.objcopy: "$(GIT_WDIR)/buildroot/output/host/usr/bin/mips-mti-linux-gnu-objcopy"
 compiler.flags.base: >
     -Wall -Werror -ggdb
 compiler.ld.resolve_circular_deps: true
