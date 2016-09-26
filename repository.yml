@@ -17,8 +17,8 @@
 # under the License.
 #
 
-#repo.name: apache-mynewt-core
-repo.name: krishnabadam-IMGMIPS
+repo.name: apache-mynewt-core
+#repo.name: krishnabadam-IMGMIPS
 repo.versions:
     "0.0.0": "develop"
     "0.7.9": "mynewt_0_8_0_b2_tag"
