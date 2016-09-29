@@ -18,12 +18,12 @@
 #
 
 # Default.
-compiler.path.cc: "mips-mti-linux-gnu-gcc"
-compiler.path.as: "mips-mti-linux-gnu-gcc -x assembler-with-cpp"
-compiler.path.archive: "mips-mti-linux-gnu-ar"
-compiler.path.objdump: "mips-mti-linux-gnu-objdump"
-compiler.path.objsize: "mips-mti-linux-gnu-size"
-compiler.path.objcopy: "mips-mti-linux-gnu-objcopy"
+compiler.path.cc: mips-mti-linux-gnu-gcc
+compiler.path.as: mips-mti-linux-gnu-gcc -x assembler-with-cpp
+compiler.path.archive: mips-mti-linux-gnu-ar
+compiler.path.objdump: mips-mti-linux-gnu-objdump
+compiler.path.objsize: mips-mti-linux-gnu-size
+compiler.path.objcopy: mips-mti-linux-gnu-objcopy
 compiler.flags.base: >
     -Wall -Werror -ggdb
 compiler.ld.resolve_circular_deps: true
